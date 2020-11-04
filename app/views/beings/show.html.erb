@@ -1,0 +1,12 @@
+<h1><%= @being.name %></h1>
+<h3>Catchphrase: "<%= @being.catchphrase %>"</h3>
+<h3>Bio: <%= @being.bio %></h3>
+<ol>
+    <h3>Books read: <% @being.books.each do |b| %></h3>
+    <li><%= link_to b.title, b %></li>
+    <% end %>
+</ol>
+<%= link_to "Edit", edit_being_path(@being) %>
+<br>
+<%= link_to "Return to all Beings...", beings_path %>
+<%= button_to "Delete", @being, method: :delete, data: { confirm: "Are you sure?" } %>

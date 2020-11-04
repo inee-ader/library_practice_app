@@ -1,0 +1,10 @@
+<h1>Being Accounts</h1>
+    <ul>
+        <% @beings.each do |b| %>
+        <li><%= link_to b.name, b %></li>
+        <% end %>
+    </ul>
+<%= link_to "Create New", new_being_path %>
+
+
+

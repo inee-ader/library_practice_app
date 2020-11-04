@@ -1,0 +1,5 @@
+<h1><%= @lib.location %></h1>
+<h3>Borrowed by: <%= @lib.being.name %></h3>
+<h3><%= @lib.book.title %> By: <%= @lib.book.author %></h3>
+
+<%= link_to "Back to libraries", library_visits_path %>

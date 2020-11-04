@@ -1,0 +1,7 @@
+<h1>Libraries of Knowledge and Thrill</h1>
+    <ul>
+        <% @libs.each do |l| %>
+        <li><%= link_to l.location, l %></li>
+        <% end %>
+    </ul>
+<%= link_to "Borrow a Book", new_library_visit_path %>

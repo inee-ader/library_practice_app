@@ -1,0 +1,2 @@
+module LibraryVisitsHelper
+end
