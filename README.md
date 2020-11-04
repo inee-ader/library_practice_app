@@ -23,10 +23,12 @@ Things you may want to cover:
 
 * ...
 
-Person -< Library Visit >- Books
--Person has: name, catchphrase, bio
--Library has: location, person_id, book_id
+
+Being -< Library Visit >- Books
+-Being has: name, catchphrase, bio
+-Library has: location, being_id, book_id
 -Books has: title, author, genre
+
 
 
 
